@@ -3,19 +3,22 @@
 	To create the file structure required to track changes to 'committed' files in the current directory
 
 
-How is the staging area different from the working directory and the repository?
+How is the staging area different from the working directory and the repository? 
+The 'staging area' provides the interface between the 'working area' and the 'local repository'. Changes made to the project in the 'working area' are 'added' to the 'staging area': from the 'staging area' the individual changes can either be 'committed' to the 'local repository', or discarded if no longer required.
 What value do you think it offers?
+Allows you to individually select which of the currently 'staged' changes are to be 'committed' to the 'repository'. So all 'staged' changes don't have to be 'committed' at the same time; and unwanted 'staged' changes don't have to be 'committed' to the 'repository'
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+After each logical change in the 'working area', execute 'git add' to store the changes in the 'staging area' that you want to commit to the 'respitory'.
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
